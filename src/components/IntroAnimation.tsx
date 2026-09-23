@@ -139,13 +139,13 @@ export const IntroAnimation: React.FC<IntroAnimationProps> = ({ onComplete }) =>
                 }}
               >
                 <img
-                  src={`${import.meta.env.BASE_URL}igrey-emblem.jpg`}
+                  src={`${import.meta.env.BASE_URL}igrey-emblem.png`}
                   alt="iGrey Holdings"
                   style={{
                     height: '84px',
                     width: 'auto',
-                    mixBlendMode: 'multiply',
-                    display: 'block'
+                    display: 'block',
+                    backgroundColor: 'transparent'
                   }}
                 />
               </motion.div>

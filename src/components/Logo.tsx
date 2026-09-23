@@ -11,17 +11,20 @@ export const Logo: React.FC<LogoProps> = ({
   theme = 'dark',
   showSubtitle = true
 }) => {
+  const emblemSrc = theme === 'light'
+    ? `${import.meta.env.BASE_URL}igrey-emblem-light.png`
+    : `${import.meta.env.BASE_URL}igrey-emblem.png`;
+
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
       <img
-        src={`${import.meta.env.BASE_URL}igrey-emblem.jpg`}
+        src={emblemSrc}
         alt="iGrey Holdings Emblem"
         style={{
           height: `${height}px`,
           width: 'auto',
-          mixBlendMode: theme === 'light' ? 'screen' : 'multiply',
-          filter: theme === 'light' ? 'invert(1) brightness(1.2)' : 'none',
-          display: 'block'
+          display: 'block',
+          backgroundColor: 'transparent'
         }}
       />
       <div style={{ display: 'flex', flexDirection: 'column' }}>
