@@ -14,7 +14,7 @@ export const Logo: React.FC<LogoProps> = ({
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
       <img
-        src="/igrey-emblem.jpg"
+        src={`${import.meta.env.BASE_URL}igrey-emblem.jpg`}
         alt="iGrey Holdings Emblem"
         style={{
           height: `${height}px`,

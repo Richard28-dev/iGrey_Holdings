@@ -139,7 +139,7 @@ export const IntroAnimation: React.FC<IntroAnimationProps> = ({ onComplete }) =>
                 }}
               >
                 <img
-                  src="/igrey-emblem.jpg"
+                  src={`${import.meta.env.BASE_URL}igrey-emblem.jpg`}
                   alt="iGrey Holdings"
                   style={{
                     height: '84px',

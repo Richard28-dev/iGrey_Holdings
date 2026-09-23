@@ -71,7 +71,7 @@ export const About: React.FC<AboutProps> = ({ onExplorePortfolio }) => {
               }}
             >
               <img
-                src="/about-estate-1.jpg"
+                src={`${import.meta.env.BASE_URL}about-estate-1.jpg`}
                 alt="iGrey Holdings Luxury Architecture"
                 style={{
                   width: '100%',
